@@ -36,7 +36,9 @@ Select ONE Additional Feature to Add
       </label>
       <button type="submit">Check Movie Answer</button>
     </form>
-    <div id="movie-result"></div>
+    <div id="movie-result">
+      <p id="movie-text"></p>
+    </div>
     <hr />
     <!-- Book Question -->
     <form id="book-form">
@@ -51,7 +53,9 @@ Select ONE Additional Feature to Add
       </label>
       <button type="submit">Check Book Answer</button>
     </form>
-    <div id="book-result"></div>
+    <div id="book-result">
+      <p id="book-text"></p>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
       //Movie Question jQuery Code
@@ -62,9 +66,9 @@ Select ONE Additional Feature to Add
         var answer = $answer.val();
 
         if (answer === "movie1") {
-          $("#movie-result").text("YESSSS!");
+          $("#movie-text").text("YESSSS!");
         } else {
-          $("#movie-result").text("Try Again!");
+          $("#movie-text").text("Try Again!");
         }
       });
 
@@ -76,9 +80,9 @@ Select ONE Additional Feature to Add
         var answer = $answer.val();
 
         if (answer === "book1") {
-          $("#book-result").text("YESSSS!");
+          $("#book-text").text("YESSSS!");
         } else {
-          $("#book-result").text("Try Again!");
+          $("#book-text").text("Try Again!");
         }
       });
     </script>
